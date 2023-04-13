@@ -36,7 +36,7 @@ a {
 nav {
   display: flex;
   padding: 0.5rem;
-  height: 3rem;
+  min-height: 3rem;
   align-items: center;
   background-color: transparent;
   position: fixed;
@@ -221,6 +221,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   gap: 1.5rem;
 }
@@ -297,8 +298,8 @@ aside {
 }
 
 .techStack {
-  width: 90%;
-  font-size: 2.5rem;
+  width: 100%;
+  font-size: 1rem;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -306,10 +307,9 @@ aside {
   margin-left: 1rem;
 }
 .techStack ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.3rem;
 }
 
 .techStack ul li {
@@ -343,8 +343,8 @@ aside {
   color: #312e2e;
   transition: color 0.5s;
 }
-.sql:hover {
-  color: #0072c6;
+.react:hover {
+  color: #61dafb;
   transition: color 0.5s;
 }
 
