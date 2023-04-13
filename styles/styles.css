@@ -162,10 +162,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
 }
-.title {
-  min-height: 70px;
+.greeting .title {
+  min-height: 110px;
 }
 .info {
   color: var(--text1);
@@ -210,7 +211,7 @@ aside {
   align-items: center;
   position: inherit;
   gap: 2rem;
-  padding: 1.5rem;
+  padding: 0.5rem;
   padding-bottom: 2rem;
 }
 .skills .title {
@@ -223,11 +224,11 @@ aside {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .skillsInfo {
   color: var(--logo);
-  width: 60%;
+  width: 95%;
   min-height: 100%;
   text-align: justify;
 }
