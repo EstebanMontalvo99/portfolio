@@ -11,9 +11,6 @@ function animateText() {
     showCursor: false,
   });
 }
-function hideMenu() {
-  menuHTML.classList.toggle("hidden");
-}
 
 function handleScroll() {
   const nav = document.querySelector("nav");
@@ -30,10 +27,18 @@ function handleScroll() {
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
+  menuHTML.classList.toggle("hidden");
 });
 window.addEventListener("scroll", handleScroll);
 const text = document.querySelector("#myText");
-// Call the animateText function to start the animation
 animateText();
-
-hamburger.addEventListener("click", hideMenu);
+window.addEventListener("click", (event) => {
+  if (
+    !menuHTML.contains(event.target) &&
+    event.target !== hamburger &&
+    !hamburger.contains(event.target)
+  ) {
+    menuHTML.classList.add("hidden");
+    hamburger.classList.remove("open");
+  }
+});

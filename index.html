@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="favicon" href="assets/dev-fotor-bg-remover-20230410212357.png" />
   <title>Portfolio</title>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -62,6 +63,7 @@
         <img src="/assets/dev-fotor-bg-remover-20230410212357.png" alt="avatar" />
       </div>
     </section>
+
     <section class="skills" id="skills">
       <div class="title">
         <h2>My Skills</h2>
@@ -101,23 +103,114 @@
         <h2>Latest Projects</h2>
       </div>
       <div class="cardsContainer">
-        <div class="projectCard">
-
+        <div class="projectCard soccerProject">
+          <div class="projectImg">
+            <img src="assets/TopscorerApp.JPG" alt="SoccerApp">
+          </div>
+          <div class="projectDescription soccerProjectDescription ">
+            <h3>Top Scorer App</h3>
+            <p>This is a React-based web app that shows the top scorers of the five biggest European soccer leagues
+              (Premier League, La
+              Liga, Serie A, Bundesliga, and Ligue 1), as well as the UEFA Champions League and Europa League, since the
+              2015 season.
+              It uses the API-Football service to retrieve data on the top scorers and presents it in an easy-to-use
+              interface. Users
+              can select the league and season to view the top scorers. </p>
+            <div class="links">
+              <a href="https://jovial-snickerdoodle-c2fb73.netlify.app/" target="_blank"><i
+                  class='bx bxl-netlify'></i></a>
+              <a href="https://github.com/EstebanMontalvo99/soccerApp" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
         </div>
-        <div class="projectCard">
-
+        <div class="projectCard weatherProject">
+          <div class="projectImg">
+            <img src="assets/weatherApp.JPG" alt="weatherApp">
+          </div>
+          <div class="projectDescription weatherProjectDescription">
+            <h3>Wheather App</h3>
+            <p>This is a React-based weather app that uses a weather API to automatically retrieve the weather
+              information for your
+              current location based on your coordinates. The app also features a search input button that allows you
+              to
+              look up
+              weather information for other cities. With a user-friendly interface and accurate and up-to-date weather
+              data, this app
+              provides a convenient way to stay informed about the weather wherever you are.</p>
+            <div class="links">
+              <a href="https://tranquil-torrone-db028a.netlify.app/" target="_blank"><i class='bx bxl-netlify'></i></a>
+              <a href="https://github.com/EstebanMontalvo99/weatherApp" target="_blank"><i
+                  class='bx bxl-github'></i></a>
+            </div>
+          </div>
         </div>
-        <div class="projectCard">
-
+        <div class="projectCard portfolioProject">
+          <div class="projectImg">
+            <img src="assets/portfolio.JPG" alt="portfolio">
+          </div>
+          <div class="projectDescription portfolioProjectDescription">
+            <h3>Portfolio</h3>
+            <p>My portfolio website is a personal website that showcases my work, skills, and experience in a sleek
+              and
+              modern design.
+              Built using HTML, CSS, and JavaScript, it features an animated typing effect created with the Typed.js
+              library. With its
+              professional and visually appealing layout, my portfolio website effectively highlights my strengths and
+              qualifications
+              and helps me stand out to potential employers or clients.</p>
+            <div class="links">
+              <a href=""><i class='bx bxl-netlify'></i></a>
+              <a href="https://github.com/EstebanMontalvo99/portfolio" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
         </div>
-        <div class="projectCard">
+        <div class="projectCard e-commerceProject">
+          <div class="projectImg">
+            <img src="assets/e-commerce.JPG" alt="e-commerce">
+          </div>
+          <div class="projectDescription  e-commerceProjectDescription">
 
+            <h3>E-commerce</h3>
+            <p>My E-commerce project is a web application that uses HTML, CSS, and JavaScript to create an online
+              store. The site uses
+              LocalStorage to save changes made by the user, and an API to retrieve product data. With a streamlined
+              interface and
+              easy navigation, customers can easily browse and purchase products with just a few clicks. Overall, this
+              E-commerce
+              project provides a convenient and hassle-free online shopping experience for users.</p>
+            <div class="links">
+              <a href="https://gilded-toffee-f0087e.netlify.app/"><i class='bx bxl-netlify' target="_blank"></i></a>
+              <a href="https://github.com/EstebanMontalvo99/ProyectoFundamentos" target="_blank"><i
+                  class='bx bxl-github'></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>Thank you for taking the time to visit my portfolio! I am always open to new opportunities and collaborations,
+        and I
+        would love to hear from you. If you have any questions or inquiries about my work, or if you would like to
+        discuss a
+        potential project, please don't hesitate to contact me. I look forward to hearing from you!</p>
+      <form action=" https://formsubmit.co/estebanmontalvo99@hotmail.com
+" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" placeholder="Write your name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+          title="Name only accepts letters and blank spaces" required="">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="E-mail" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+          title="Invalid email" required="">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" required=""></textarea>
+        <button>Submit</button>
+      </form>
+    </section>
   </div>
+  <footer>
+    <p>Designed & Built by Esteban Montalvo</p>
+  </footer>
   </div>
 </body>
 
