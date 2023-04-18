@@ -4,13 +4,13 @@
   scroll-margin-top: 3.2rem;
 }
 :root {
-  --bg1sec: #1d3557;
-  --bg2sec: #e5e5e5;
-  --text1: #adcbe3;
-  --titile: #f7fff7;
-  --hover: #a6c1ee;
-  --menu: #444444;
-  --logo: #333;
+  --bg1sec: #1f2023;
+  --bg2sec: #eaeaea;
+  --text1: #e5e5e5;
+  --titile: #f5a623;
+  --hover: #9cc3d5;
+  --menu: #555555;
+  --logo: #333333;
 }
 body {
   margin: 0;
@@ -92,8 +92,8 @@ nav {
 }
 .navMenu li :hover {
   background-color: var(--text1);
-  transition: background-color 1s;
   color: var(--logo);
+  transition: background-color 0.5s;
 }
 .logo {
   color: var(--titile);
@@ -101,11 +101,7 @@ nav {
   position: relative;
   width: 50px;
   height: 50px;
-  background: radial-gradient(
-    circle,
-    rgba(173, 203, 227, 1) 0%,
-    rgba(68, 68, 68, 1) 100%
-  );
+  background: radial-gradient(circle, var(--hover) 0%, var(--menu) 100%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 .logo h2 {
@@ -152,13 +148,15 @@ nav {
 }
 
 .myInfo {
-  padding: 3.5rem;
   background-color: var(--bg1sec);
   display: flex;
   justify-content: center;
   gap: 1rem;
   align-items: center;
   flex-direction: column-reverse;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 3.5rem;
   min-height: 100vh;
 }
 .greeting {
@@ -178,11 +176,8 @@ nav {
   text-align: justify;
 }
 .img {
-  background: radial-gradient(
-    circle,
-    rgba(173, 203, 227, 1) 0%,
-    rgba(68, 68, 68, 1) 100%
-  );
+  background: radial-gradient(circle, var(--hover) 0%, var(--menu) 100%);
+
   border-radius: 50%;
   overflow: hidden;
   width: 50%;
@@ -219,9 +214,8 @@ aside {
   justify-content: center;
   align-items: center;
   position: inherit;
-  gap: 2rem;
-  padding: 0.5rem;
-  padding-bottom: 2rem;
+  gap: 1.3em;
+  padding: 1em 2em 1em 2em;
 }
 .skills .title {
   color: var(--titile);
@@ -364,9 +358,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 3rem;
+  padding: 1em 2em 1em 2em;
   gap: 3rem;
-  padding-top: 2rem;
 }
 
 .projects .title {
@@ -390,6 +383,7 @@ aside {
   background: var(--bg2sec);
   border: 3px solid var(--menu);
   overflow: hidden;
+  font-size: 0.9rem;
 }
 
 .projectImg {
@@ -435,7 +429,7 @@ aside {
   align-items: center;
   flex-direction: column;
   color: var(--text1);
-  padding: 3rem;
+  padding: 1em 2em 1em 2em;
 }
 .contact h2 {
   color: var(--titile);
@@ -443,8 +437,9 @@ aside {
   margin-bottom: 1rem;
 }
 .contact p {
-  text-align: center;
+  text-align: justify;
   margin-bottom: 2rem;
+  max-width: 80%;
 }
 .contact form {
   display: flex;
@@ -461,4 +456,101 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    min-height: 10px;
+    background-color: inherit;
+    height: 100%;
+    width: 90%;
+  }
+  .hidden {
+    right: 0;
+  }
+  .navMenu {
+    flex-direction: row;
+    height: 100%;
+  }
+  .navMenu li {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 13px;
+  }
+  .hamburger-menu {
+    display: none;
+    visibility: hidden;
+  }
+
+  .myInfo {
+    flex-direction: row-reverse;
+    position: relative;
+  }
+  .greeting {
+    font-size: 1.1rem;
+  }
+  .greeting .title {
+    min-height: 120px;
+  }
+
+  .left {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .skills {
+    gap: 1em;
+  }
+  .mainSkills {
+    flex-direction: row;
+    gap: 5em;
+    width: 80%;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Styles for large screens */
+  .greeting {
+    width: 50%;
+  }
+
+  .greeting .title {
+    min-height: 40px;
+  }
+  .img {
+    width: 20%;
+  }
+  .mainSkills {
+    width: 70%;
+  }
+  .right {
+    display: block;
+    position: fixed;
+    letter-spacing: 0.3em;
+    right: 0;
+    bottom: 35%;
+    rotate: 90deg;
+    cursor: none;
+  }
+  .left {
+    position: fixed;
+    align-self: flex-end;
+    flex-direction: column;
+    left: 8%;
+    bottom: 30%;
+  }
+  .cardsContainer {
+    max-width: 70%;
+  }
+  .contact p {
+    text-align: justify;
+    margin-bottom: 2rem;
+    max-width: 70%;
+  }
 }
