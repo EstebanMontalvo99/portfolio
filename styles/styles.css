@@ -195,6 +195,11 @@ aside {
   gap: 2rem;
   font-size: 2rem;
 }
+.right:hover {
+  color: var(--titile);
+  text-shadow: 5px 5px 5px black;
+  transition: color 0.5s;
+}
 .myInfo .bxl-github:hover {
   color: var(--titile);
   text-shadow: 5px 5px 5px black;
@@ -389,12 +394,14 @@ aside {
 .projectImg {
   overflow: hidden;
   border-radius: 1rem;
+  height: 100%;
 }
 
 .projectImg img {
   width: 100%;
   object-fit: cover;
   object-position: top;
+  height: 100%;
 }
 
 .projectDescription {
@@ -517,17 +524,17 @@ footer {
 @media screen and (min-width: 992px) {
   /* Styles for large screens */
   .greeting {
-    width: 50%;
+    width: 45%;
   }
 
   .greeting .title {
-    min-height: 40px;
+    min-height: 65px;
   }
   .img {
     width: 20%;
   }
   .mainSkills {
-    width: 70%;
+    width: 65%;
   }
   .right {
     display: block;
@@ -536,7 +543,7 @@ footer {
     right: 0;
     bottom: 35%;
     rotate: 90deg;
-    cursor: none;
+    cursor: pointer;
   }
   .left {
     position: fixed;
@@ -551,6 +558,6 @@ footer {
   .contact p {
     text-align: justify;
     margin-bottom: 2rem;
-    max-width: 70%;
+    max-width: 65%;
   }
 }
