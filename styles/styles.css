@@ -482,6 +482,7 @@ footer {
   .navMenu li {
     display: flex;
     text-align: center;
+    width: 8%;
     height: 100%;
     justify-content: center;
     align-items: center;
