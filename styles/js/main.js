@@ -11,6 +11,20 @@ function animateText() {
     showCursor: false,
   });
 }
+function animateText1() {
+  const texts1 = [
+    "Ingeniero en Tecnologías de la Información",
+    "Front end developer",
+  ];
+  new Typed(text, {
+    strings: texts1,
+    typeSpeed: 50, // The speed of typing in milliseconds
+    backSpeed: 100, // The speed of deleting in milliseconds
+    loop: true, // Whether to loop through the texts
+    loopCount: Infinity, // The number of loops, Infinity for infinite loop
+    showCursor: false,
+  });
+}
 
 function handleScroll() {
   const nav = document.querySelector("nav");
@@ -29,9 +43,18 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
   menuHTML.classList.toggle("hidden");
 });
+
 window.addEventListener("scroll", handleScroll);
 const text = document.querySelector("#myText");
-animateText();
+
+const text1 = document.querySelector("#myText");
+
+if (window.location.pathname.includes("index.html")) {
+  animateText();
+} else if (window.location.pathname.includes("indexes.html")) {
+  animateText1();
+}
+
 window.addEventListener("click", (event) => {
   if (
     !menuHTML.contains(event.target) &&

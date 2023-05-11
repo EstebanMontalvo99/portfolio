@@ -12,6 +12,9 @@
   --menu: #555555;
   --logo: #333333;
 }
+p {
+  line-height: 1.2;
+}
 body {
   margin: 0;
   padding: 0;
@@ -46,6 +49,12 @@ nav {
   width: 100%;
   transition: height 03s;
 }
+input {
+  font-family: inherit;
+}
+button {
+  font-family: inherit;
+}
 .container {
   max-width: 100vw;
   min-height: 100vh;
@@ -71,6 +80,14 @@ nav {
   top: 0;
   z-index: 99999;
   transition: right 0.7s ease-in-out;
+}
+.language {
+  position: absolute;
+  right: 7.5em;
+  z-index: 999999;
+}
+.language:hover {
+  color: var(--titile);
 }
 .hidden {
   right: -200%;
@@ -356,6 +373,10 @@ aside {
   color: #61dafb;
   transition: color 0.5s;
 }
+.redux:hover {
+  color: #764abc;
+  transition: color 0.5s;
+}
 
 .projects {
   background-color: var(--bg1sec);
@@ -417,6 +438,12 @@ aside {
   text-align: justify;
   padding: 0.5rem;
 }
+.projectDescription h3 {
+  font-weight: 900;
+}
+.projectDescription {
+  font-weight: 400;
+}
 
 .projectCard:hover .projectDescription {
   display: block;
@@ -428,6 +455,12 @@ aside {
   word-spacing: 1rem;
   font-size: 2rem;
   cursor: pointer;
+}
+.links .bxl-github:hover {
+  color: var(--titile);
+}
+.links .bxl-netlify:hover {
+  color: var(--titile);
 }
 .contact {
   background: var(--bg1sec);
@@ -453,8 +486,24 @@ aside {
   flex-direction: column;
   gap: 0.7rem;
 }
+.contact form input {
+  padding: 01em;
+}
+.contact form input:focus {
+  background-color: var(--titile);
+  transition: background-color 1s;
+}
+.contact form textarea:focus {
+  background-color: var(--titile);
+  transition: background-color 1s;
+}
 .contact form button {
   border-radius: 5rem;
+  padding: 0.5em;
+}
+.contact form button:hover {
+  background-color: var(--titile);
+  transition: background-color 1s;
 }
 footer {
   padding: 3rem;
