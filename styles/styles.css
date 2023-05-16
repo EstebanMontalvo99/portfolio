@@ -2,6 +2,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-margin-top: 3.2rem;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
 }
 :root {
   --bg1sec: #1f2023;
@@ -22,7 +24,7 @@
   --logo: #4f9eb9;
 }
 p {
-  line-height: 1.2;
+  line-height: 1.1;
 }
 body {
   margin: 0;
