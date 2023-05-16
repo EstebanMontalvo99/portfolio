@@ -439,8 +439,9 @@ aside {
   background: var(--bg2sec);
   border: 3px solid var(--menu);
   overflow: hidden;
-  font-size: 1.1rem;
-  min-height: 400px;
+  height: 100%;
+  font-size: 1.2rem;
+  min-height: 450px;
 }
 
 .projectImg {
