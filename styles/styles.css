@@ -12,6 +12,15 @@
   --menu: #555555;
   --logo: #333333;
 }
+.dark-mode {
+  --bg1sec: #bababa;
+  --bg2sec: #fbefef;
+  --text1: #021219;
+  --titile: #2a83e2;
+  --hover: #e8f2fd;
+  --menu: #f1dcfc;
+  --logo: #4f9eb9;
+}
 p {
   line-height: 1.2;
 }
@@ -85,6 +94,27 @@ button {
   position: absolute;
   right: 7.5em;
   z-index: 999999;
+}
+.bx-sun {
+  position: absolute;
+  right: 9em;
+  z-index: 999999;
+  color: var(--text1);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.bx-sun.bx-sun:hover {
+  color: var(--titile);
+}
+.bx-moon {
+  position: absolute;
+  right: 9em;
+  z-index: 999999;
+  color: var(--text1);
+  font-size: 1.2rem;
+  cursor: pointer;
+  visibility: hidden;
+  display: none;
 }
 .language:hover {
   color: var(--titile);

@@ -25,6 +25,25 @@ function animateText1() {
     showCursor: false,
   });
 }
+const sunIcon = document.querySelector(".bx-sun");
+const moonIcon = document.querySelector(".bx-moon");
+const root = document.documentElement;
+
+sunIcon.addEventListener("click", function () {
+  root.classList.toggle("dark-mode");
+
+  sunIcon.style.visibility = "hidden";
+  sunIcon.style.display = "none";
+  moonIcon.style.visibility = "visible";
+  moonIcon.style.display = "block";
+});
+moonIcon.addEventListener("click", function () {
+  root.classList.toggle("dark-mode");
+  moonIcon.style.visibility = "hidden";
+  moonIcon.style.display = "none";
+  sunIcon.style.visibility = "visible";
+  sunIcon.style.display = "block";
+});
 
 function handleScroll() {
   const nav = document.querySelector("nav");
