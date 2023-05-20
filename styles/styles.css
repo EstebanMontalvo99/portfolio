@@ -29,6 +29,7 @@ p {
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--bg1sec);
 }
 h1,
 h2,
@@ -117,6 +118,9 @@ button {
   cursor: pointer;
   visibility: hidden;
   display: none;
+}
+.bx-moon:hover {
+  color: var(--titile);
 }
 .language:hover {
   color: var(--titile);
@@ -637,7 +641,10 @@ footer {
     bottom: 30%;
   }
   .cardsContainer {
-    max-width: 70%;
+    max-width: 75%;
+  }
+  .projectCard {
+    min-height: 350px;
   }
   .contact p {
     text-align: justify;
