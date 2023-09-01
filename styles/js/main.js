@@ -1,7 +1,10 @@
 const menuHTML = document.querySelector(".menu");
 const hamburger = document.querySelector(".hamburger-menu");
+const text = document.querySelector("#myText");
+
+const text1 = document.querySelector("#myText");
 function animateText() {
-  const texts = ["an IT Engineer", "a Front end developer"];
+  const texts = ["an IT Engineer", "a Fullstack end developer"];
   new Typed(text, {
     strings: texts,
     typeSpeed: 50, // The speed of typing in milliseconds
@@ -14,7 +17,7 @@ function animateText() {
 function animateText1() {
   const texts1 = [
     "Ingeniero en Tecnologías de la Información",
-    "Front end developer",
+    "Fullstack developer",
   ];
   new Typed(text, {
     strings: texts1,
@@ -64,9 +67,6 @@ hamburger.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", handleScroll);
-const text = document.querySelector("#myText");
-
-const text1 = document.querySelector("#myText");
 
 if (window.location.pathname.includes("index.html")) {
   animateText();
