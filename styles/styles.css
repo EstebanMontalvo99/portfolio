@@ -413,6 +413,10 @@ aside {
   color: #764abc;
   transition: color 0.5s;
 }
+.node:hover {
+  color: #8cc84b;
+  transition: color 0.5s;
+}
 
 .projects {
   background-color: var(--bg1sec);
