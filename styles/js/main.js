@@ -4,7 +4,6 @@ const text = document.querySelector("#myText");
 
 const text1 = document.querySelector("#myText1");
 function animateText() {
-  console.log("Animating text 1");
   const texts = ["an IT Engineer", "a Fullstack developer"];
   new Typed(text, {
     strings: texts,
