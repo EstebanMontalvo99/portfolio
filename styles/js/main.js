@@ -4,7 +4,7 @@ const text = document.querySelector("#myText");
 
 const text1 = document.querySelector("#myText1");
 function animateText() {
-  const texts = ["an IT Engineer", "a Fullstack end developer"];
+  const texts = ["an IT Engineer", "a Fullstack developer"];
   new Typed(text, {
     strings: texts,
     typeSpeed: 50, // The speed of typing in milliseconds
@@ -19,7 +19,7 @@ function animateText1() {
     "Ingeniero en Tecnologías de la Información",
     "Fullstack developer",
   ];
-  new Typed(text, {
+  new Typed(text1, {
     strings: texts1,
     typeSpeed: 50, // The speed of typing in milliseconds
     backSpeed: 100, // The speed of deleting in milliseconds
