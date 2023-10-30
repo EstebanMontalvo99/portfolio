@@ -67,11 +67,11 @@ hamburger.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", handleScroll);
-
-if (window.location.pathname.includes("index.html")) {
-  animateText();
-} else if (window.location.pathname.includes("indexes.html")) {
+if (window.location.pathname.includes("indexes")) {
   animateText1();
+} else {
+  window.location.pathname.includes("index.html");
+  animateText();
 }
 
 window.addEventListener("click", (event) => {
