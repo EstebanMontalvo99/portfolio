@@ -402,7 +402,7 @@ aside {
   transition: color 0.5s;
 }
 .github:hover {
-  color: #312e2e;
+  color: blue;
   transition: color 0.5s;
 }
 .react:hover {
