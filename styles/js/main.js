@@ -2,7 +2,7 @@ const menuHTML = document.querySelector(".menu");
 const hamburger = document.querySelector(".hamburger-menu");
 const text = document.querySelector("#myText");
 
-const text1 = document.querySelector("#myText");
+const text1 = document.querySelector("#myText1");
 function animateText() {
   const texts = ["an IT Engineer", "a Fullstack end developer"];
   new Typed(text, {
